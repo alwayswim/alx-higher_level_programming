@@ -1,8 +1,4 @@
 #!/usr/bin/python3
-alphabet = ""
-for number in range(97, 123):
-    alphabet = alphabet + chr(number)
-    number += 1
-for elm in alphabet:
-    if elm != "e" and elm != "q":
-        print("{}".format(elm), end="")
+for a in range(ord('a'), ord('z') + 1):
+    if chr(a) != 'e' and chr(a) != 'q':
+        print("{:c}".format(a), end='')
